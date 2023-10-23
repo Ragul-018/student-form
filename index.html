@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;"><u style="color: #4070f4;">Student Form</u></h1>
+    <div id="table1">
+    <table >
+        
+        <tr>
+            <th>Name</th>
+            <td><input type="text" id="inpname"></td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td><input type="text" id="inpage"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td><input type="radio" name="Gender" id="inpgender" value="Male"><label for="male">Male</label>
+            <input type="radio" name="Gender" id="inpgender" value="Female"><label for="female">Female</label></td>
+        </tr>
+        <tr>
+            <th>Course</th>         
+            <td><select name="course" id="course" style="width: 100%;">
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="text" id="inpemail"></td>
+        </tr>
+        <tr>
+            <th colspan="2"><button style="width: 100%;" onclick="additem()" id="submit">Submit</button></th>
+        </tr>
+    </table>
+</div>
+
+<div id="table2">
+    <table id="table">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>  
+    </table>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
